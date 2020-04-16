@@ -1,0 +1,114 @@
+.card-main {
+    /*border:1px solid gray;*/
+    box-shadow:
+        /*0 -3em 3em rgba(0,0,0,0.1),*/
+            0 2px  0 2px rgb(255,255,255),
+            0.3em 0.3em 1em rgba(0,0,0,0.3);
+    border-radius: 3px;
+    border-top: 1px solid #DBDBDB;
+    padding-bottom: 10px;
+    margin-bottom: 5%;
+}
+
+p {
+    word-break: break-all;
+    white-space: normal;
+}
+.card-main h1{
+    font-size: 18px;
+    font-style: italic;
+    font-weight: 600;
+    margin: 1em 5%;
+    word-break: break-all;
+}
+.card-main img{
+    width: 90%;
+    margin:0 5%;
+    border: solid 1px  #DBDBDB;
+    border-radius: 3px;
+    padding: 2px;
+}
+.card-foot {
+    display: flex;
+    margin: 2% 5% 4% 5%;
+}
+.date {
+    flex: 1;
+    font-style: italic;
+    font-weight: 500;
+    font-size:1vw
+}
+.card-foot :nth-child(2),
+.card-foot :nth-child(3){
+    border-radius: 4px;
+    /*padding: 1px;*/
+    font-weight: bold;
+    height: 100%;
+    /*width: 80px;*/
+    font-size: 1vw;
+    text-align: center;
+    margin: auto 1%;
+    padding: 0 5px 0 5px
+}
+.card-foot :nth-child(2){
+    background-color: #6D757B;
+    color: #FFFFFF;
+    -webkit-text-fill-color:#FFFFFF;
+}
+#world{
+    background-color: #7C4EFF;
+    color: #FFFFFF;
+    -webkit-text-fill-color:#FFFFFF;
+}
+#politics{
+    background-color: #419488;
+    color: #FEFFFF;
+    -webkit-text-fill-color:#FEFFFF;
+}
+#business{
+    background-color: #4596EC;
+    color: #FDFEFF;
+    -webkit-text-fill-color: #FDFEFF;
+}
+#technology{
+    background-color: #CEDD39;
+    color: #181A07;
+    -webkit-text-fill-color: #181A07;
+}
+#sports{
+    background-color: #F6C244;
+    color: #050401;
+    -webkit-text-fill-color: #050401;
+}
+
+#guardian{
+    background-color: #13284A;
+    color: #F9F9FA;
+    -webkit-text-fill-color:#F9F9FA;
+}
+#nytimes{
+    background-color: #DDDDDD;
+    color: #232323;
+    -webkit-text-fill-color:#232323;
+}
+
+@media  screen and (max-width: 480px) {
+    .date {
+        flex: 1;
+        font-style: italic;
+        font-weight: 500;
+        font-size:3vw;
+    }
+    .card-foot :nth-child(2),
+    .card-foot :nth-child(3){
+        border-radius: 4px;
+        /*padding: 1px;*/
+        font-weight: bold;
+        height: 100%;
+        /*width: 80px;*/
+        font-size: 3vw;
+        text-align: center;
+        margin: auto 1%;
+        padding: 0 5px 0 5px
+    }
+}

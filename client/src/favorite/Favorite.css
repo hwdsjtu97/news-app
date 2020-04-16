@@ -1,0 +1,28 @@
+html {
+    box-sizing: border-box;
+}
+/* inherit border-box on all elements in the universe and before and after
+ */
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+.fav-main{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    flex:0 1 auto;
+    margin-left: 3%;
+}
+.item {
+    flex-basis: 23%;
+
+    margin: 0 0.5%;
+}
+@media  screen and (max-width: 480px) {
+    .fav-main{
+        flex-direction:column
+    }
+}

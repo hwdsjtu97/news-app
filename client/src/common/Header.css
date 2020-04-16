@@ -1,0 +1,36 @@
+/*.header{*/
+/*    display:flex*/
+/*}*/
+.mr-auto {
+    font-size: 14px;
+}
+.color-nav {
+background: linear-gradient(90deg,rgb(27, 40, 72)  0%, rgb(80, 109, 177) 100%)
+}
+.switcher{
+    color:white;
+}
+.news{
+    color:white;
+    margin: 0 20px 0 10px;
+
+}
+.switcher span{
+    margin: auto;
+}
+/*.sourceSwitch{*/
+/*    text-align: center;*/
+/*}*/
+.sourceSwitch div{
+    vertical-align: middle;
+}
+@media  screen and (max-width: 480px) {
+    .sourceSwitch{
+        display:flex;
+        flex-direction: column;
+    }
+    .link-font {
+        -webkit-text-fill-color: rgba(255,255,255,0.5);
+    }
+}
+
