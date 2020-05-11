@@ -1,6 +1,6 @@
 # News App
 
-One Paragraph of project description goes here
+A news app built using React and Node.js
 
 ## Getting Started
 
