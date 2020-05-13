@@ -3,9 +3,10 @@ import NewsItem from "./NewsItem";
 import "./NewsList.css"
 import Header from "./Header";
 import Loading from "./Loading";
+import config from "../Config.json";
 
-// const host = "https://news-app-wendihua.azurewebsites.net";
-const host="http://ec2-54-198-202-6.compute-1.amazonaws.com:4000"
+const host = config.url;
+console.log("host:", host);
 
 export  default  class NewsList extends React.Component {
     constructor() {

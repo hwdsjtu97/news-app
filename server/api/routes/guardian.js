@@ -101,15 +101,15 @@ router.get('/', (req,res,next) => {
 
 })
 router.get('/article',(req,res,next)=> {
-    console.log(req.query.id)
+    // console.log(req.query.id)
     const articleId = req.query.id;
-    console.log('article');
+    // console.log('article');
     const apiUrl = `https://content.guardianapis.com/${articleId}?api-key=${apiKey}&show-blocks=all`
     try{
         fetch(apiUrl)
             .then(result => result.json())
             .then(json => {
-                console.log(json);
+                // console.log(json);
                 json = handleArticle(json);
                 res.status(200).json(json);
             })

@@ -16,7 +16,7 @@ const map = {
 };
 
 function handleJson(json) {
-    console.log(json);
+    // console.log(json);
     let results = json.results;
     let returns = [];
     let count = 0;
@@ -47,16 +47,16 @@ function handleJson(json) {
 
 
 router.get('/article',(req,res,next)=> {
-    console.log(req.query.id)
+    // console.log(req.query.id)
     const articleId = req.query.id;
-    console.log('article');
+    // console.log('article');
     const apiUrl = `https://api.nytimes.com/svc/search/v2/articlesearch.json?fq=web_url:("${articleId}")&api-key=${apiKey}`
     // const apiUrl = `https://content.guardianapis.com/${articleId}?api-key=${apiKey}&show-blocks=all`
     try{
         fetch(apiUrl)
             .then(result => result.json())
             .then(json => {
-                console.log(json);
+                // console.log(json);
                 json = handleArticle(json.response.docs[0]);
                 res.status(200).json(json);
             })
@@ -137,7 +137,7 @@ function handleArticle(docs){
 }
 
 function handleSearch(json) {
-    console.log(json);
+    // console.log(json);
     let results = json.response.docs;
     let returns = [];
     // let count = 0;

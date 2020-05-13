@@ -5,8 +5,11 @@ import {toast, ToastContainer} from "react-toastify";
 import CardSimple from "../card/CardSimple";
 import queryString from 'query-string'
 import Loading from "../common/Loading";
+import config from "../Config.json";
+
+const host = config.url;
 // const host = "https://news-app-wendihua.azurewebsites.net"
-const host="http://ec2-54-198-202-6.compute-1.amazonaws.com:4000"
+// const host="http://ec2-54-198-202-6.compute-1.amazonaws.com:4000"
 
 
 export default class Search extends React.Component {
