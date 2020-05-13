@@ -4,7 +4,7 @@ import commentBox from 'commentbox.io';
 export default class Comment extends React.Component{
     componentDidMount() {
         const {id} = this.props;
-        this.removeCommentBox = commentBox('5723096048730112-proj',{
+        this.removeCommentBox = commentBox('5655614529208320-proj',{
                 createBoxUrl(boxId, pageLocation) {
 
                     pageLocation.search = ''; // removes query string!

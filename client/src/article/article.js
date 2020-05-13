@@ -2,8 +2,11 @@ import React from "react";
 import ArticleItem from "./ArticleItem";
 import HeaderSimple from "../common/HeaderSimple";
 import Loading from "../common/Loading";
+import config from "../Config.json";
+
+const host = config.url;
 // const host = "https://news-app-wendihua.azurewebsites.net"
-const host="http://ec2-54-198-202-6.compute-1.amazonaws.com:4000"
+// const host="http://ec2-54-198-202-6.compute-1.amazonaws.com:4000"
 export default class Article extends React.Component {
 
 

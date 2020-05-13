@@ -9,7 +9,8 @@ import styled from 'styled-components';
 // type State = {
 //     inputValue: string,
 // };
-const bingKey="529ec4d1f06e487983c2615d0100196a";
+// const bingKey="529ec4d1f06e487983c2615d0100196a";
+const bingKey="130769622c084f10bbc2772b506638bb"
 
 
 

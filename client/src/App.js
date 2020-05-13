@@ -3,7 +3,6 @@ import logo from './logo.svg';
 import './App.css';
 import { BrowserRouter, Route, Switch,HashRouter } from 'react-router-dom';
 import Home from './home/home';
-import World from './world/world';
 import Article from "./article/article";
 import Header from "./common/Header";
 import NewsItem from "./common/NewsItem";
